@@ -20,6 +20,5 @@ else:
     assert False, f"Expected '{Expected}', but got '{Actual}'"
 
 time.sleep(2)
-git remote add origin https://github.com/Nkosikk/Python2ndGroup2025.git
 
 
