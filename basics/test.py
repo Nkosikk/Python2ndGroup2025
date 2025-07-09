@@ -7,4 +7,4 @@ Number = 1
 
 printName(Number + 1)
 
-# ToDo - when we start reading data fromthe file , lets look at how we declare the variables
+# ToDo - when we start reading data from the file , lets look at how we declare the variables
