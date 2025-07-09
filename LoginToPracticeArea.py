@@ -57,10 +57,10 @@ Actual_practice_page_title = Selenium_Practice_page_element.text
 Expected_practice_page_title = "💻 Practice Area"
 
 if Actual_practice_page_title == Expected_practice_page_title:
-    print("Test Passed: The text, Selenium Practice Area is displayed.")
+    print("Test Passed: Text Selenium Practice Area is displayed correctly.")
     assert True
 else:
-    print(f"Test Failed: Not redirected to Selenium Practice Area page.")
+    print(f"Test Failed: Text Selenium Practice Area is not displayed correctly.")
     assert False, f"Expected '{Expected_practice_page_title}', but got '{Actual_practice_page_title}'"
 time.sleep(2)
 
