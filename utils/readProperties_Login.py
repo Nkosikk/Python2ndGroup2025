@@ -11,3 +11,5 @@ class ReadConfig_Login():
     def getusername(self):
         return config.get("Login Details", "username")
 
+    def getpassword(self):
+        return config.get("Login Details", "password")
