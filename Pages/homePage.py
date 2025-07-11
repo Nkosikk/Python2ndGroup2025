@@ -14,3 +14,9 @@ class HomePage:
         wait=WebDriverWait(self.driver, 10)
         element = wait.until(EC.visibility_of_element_located((By.XPATH, self.lbl_welcome_xpath)))
         element.is_displayed()
+
+
+
+
+
+
