@@ -1,0 +1,1 @@
+allure serve /Users/nkosicele/Python2ndGroup2025/allure-results
