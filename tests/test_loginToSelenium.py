@@ -8,6 +8,5 @@ class Test_LoginToSelenium:
     username = ReadConfig_Login().getusername()
     print(dev_url)
     print(username)
-
     # def test_login_to_selenium(self):
     #     print(self.dev_url)
