@@ -1,4 +1,3 @@
-import time
 
 import pytest
 from selenium import webdriver
@@ -17,7 +16,7 @@ def setup(browser):
     return driver
 
 
-def pytest_addoption(parser):
+def pytest_adoption(parser):
     parser.addoption("--browser")
 
 
