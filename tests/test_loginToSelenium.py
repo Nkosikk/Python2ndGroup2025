@@ -1,5 +1,10 @@
-from symtable import Class
+import time
 
+import allure
+import pytest
+
+from Pages.homePage import HomePage
+from Pages.learningMaterialPage import learningMaterialPage
 from utils.readProperties_Login import ReadConfig_Login
 
 
@@ -53,7 +58,21 @@ class Test_LoginToSelenium:
         time.sleep(3)
 
         self.driver.quit()
-    print(dev_url)
-    print(username)
-    # def test_login_to_selenium(self):
-    #     print(self.dev_url)
+
+    @pytest.mark.sanity
+    @pytest.mark.leaning_material_Part2
+    @allure.severity(allure.severity_level.CRITICAL)
+    def test_clickOnSeleniumPractise(self, setup):
+        self.driver = setup
+        self.driver.get(self.dev_url)
+        self.hp = HomePage(self.driver)
+        self.hp.verifyWelcomeText()
+        self.hp.clickLearningMaterial()
+        self.lm = learningMaterialPage(self.driver)
+        self.lm.verifyPracticalAssignmentText()
+        self.lm.clickOnSeleniumPractise()
+        allure.attach(self.driver.get_screenshot_as_png(), name="Click on Selenium Practise tab",
+                      attachment_type=allure.attachment_type.PNG)
+        time.sleep(3)
+
+        self.driver.quit()
