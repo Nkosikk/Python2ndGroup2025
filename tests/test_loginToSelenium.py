@@ -1,8 +1,6 @@
 import time
-
 import allure
 import pytest
-
 from Pages.homePage import HomePage
 from Pages.learningMaterialPage import learningMaterialPage
 from Pages.logoutPage import LogoutPage
