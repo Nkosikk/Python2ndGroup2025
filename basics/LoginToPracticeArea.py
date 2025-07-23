@@ -33,10 +33,15 @@ element.click()
 
 # I want to input Username in username field
 
-element = driver.find_element(By.ID, "//input[@id='username']")
+element = driver.find_element(By.ID, "username")
 element.send_keys("testuser")
 
 # I want to input Password in password field
 
-element = driver.find_element(By.ID, "//input[@id='password']")
+element = driver.find_element(By.ID, "password")
 element.send_keys("password123")
+
+# I want to click on the login button
+
+element = driver.find_element(By.XPATH, "//button[normalize-space()='Login']")
+element.click()
