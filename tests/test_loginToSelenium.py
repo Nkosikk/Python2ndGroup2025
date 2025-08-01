@@ -8,7 +8,7 @@ from Pages.learningMaterialPage import learningMaterialPage
 from utils.readProperties_Login import ReadConfig_Login
 
 
-class Test_LoginToSelenium:
+class Test_loginToSelenium:
     dev_url = ReadConfig_Login().getDevUrl()
     username = ReadConfig_Login().getusername()
     password = ReadConfig_Login().getpassword()
